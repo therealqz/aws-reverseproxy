@@ -58,7 +58,7 @@ After creating the RDS DataBase subnet, create the RDS DataBase using the MySQL 
 
  ![DataBase](/images/databaseCreation.png)  
  
-  So far, we've created ,our   VPC, internet gateway, all the subnets and added them to the route table, we’ve created the NAT gateways, we've create the Aamazon Certificate ,  Amazon EFS, RDS,
+  So far,we've created ,our VPC, internet gateway, all the subnets and added them to the route table, we’ve created the NAT gateways, we've create the Aamazon Certificate ,  Amazon EFS, RDS,
 
 ---
 ---
@@ -71,6 +71,8 @@ Note : The Launch template is like a recipe for creating an instance. You can us
 To create a Launch template , we need an AMI (Amazon Machine image) installed with our dependencies and programs based on our needs .
 
 I’ll create 3 instances for the 3 AMI - Bastion, NGINX,  web-servers . 
+
+![instances](/images/instances.png)
 
 I also created a Security group for the AMIs (ACS-ami) After creating the AMIs, we create the userdata  ![AMIs](/images/AMIs.png)
 ![AMI installation-webserver](/images/AMI-Installation-HistoryBastion.png)
@@ -274,7 +276,7 @@ Ensure health check passes for both ALB and EC2
 Desired Capacity is 2
 Minimum capacity is 2
 Maximum capacity is 4
-Set SCale-out if CPU utilization reaches 90%
+Set Scale-out if CPU utilization reaches 90%
 
 Ensure there is an SNS topic to send out scaling notifications
 

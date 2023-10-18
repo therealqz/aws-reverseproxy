@@ -6,8 +6,6 @@
 - create Launch template
 - create Austocaling
 
-
-
 # Bastion ami installation
 -------------------------------------
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm

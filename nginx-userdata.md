@@ -23,7 +23,6 @@ rm -rf reverse.conf
 
 rm -rf /ACS-project-config
 
-
 user nginx;
 worker_processes auto;
 error_log /var/log/nginx/error.log;
@@ -75,7 +74,6 @@ http {
         access_log off;
         return 200;
        }
-    
          
         location / {
             proxy_set_header             Host $host;
