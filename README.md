@@ -1,5 +1,5 @@
-#### AWS CLOUD SOLUTION TO HOST 2 WEBSITES USING REVERSE PROXY 
-#
+# aws-reverseproxy
+An end to end AWS Cloud Solution to host 2 websites using reverse proxy. 
 
 ----
 
